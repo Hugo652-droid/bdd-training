@@ -60,7 +60,12 @@ module.exports = class CartItem {
     }
 
     #validateArticleId(articleId) {
-        //TODO Implement this method
+        if (articleId >= 1) {
+            return articleId;
+        }
+        else {
+            throw new InvalidArticleIdException();
+        }
     }
 
     #validateQuantity(quantity) {
