@@ -30,7 +30,7 @@ module.exports = class CartItem {
     }
 
     get quantity() {
-        //TODO Implement this method
+        return this.#quantity;
     }
 
     set quantity(value) {
