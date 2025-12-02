@@ -73,7 +73,7 @@ module.exports = class CartItem {
             return quantity;
         }
         else {
-            throw new InvalidValidateException();
+            throw new InvalidQuantityException();
         }
     }
 
