@@ -22,7 +22,7 @@ module.exports = class CartItem {
     }
 
     get articleId() {
-        //TODO Implement this method
+        return this.#articleIdValue;
     }
 
     get name() {
