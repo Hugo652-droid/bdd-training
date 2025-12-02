@@ -52,7 +52,7 @@ module.exports = class CartItem {
 
     //region private methods
     set #articleId(value) {
-        //TODO Implement this method
+        this.#articleIdValue = this.#validateArticleId(value);
     }
 
     set #name(value) {
