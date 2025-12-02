@@ -65,7 +65,7 @@ module.exports = class CartItem {
 
     #validateQuantity(quantity) {
         if (quantity >= 1) {
-            this.#quantity = quantity;
+            return quantity;
         }
         else {
             throw new InvalidValidateException();
