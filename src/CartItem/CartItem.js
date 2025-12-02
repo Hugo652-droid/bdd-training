@@ -26,7 +26,7 @@ module.exports = class CartItem {
     }
 
     get name() {
-        return this.#name;
+        return this.#nameValue;
     }
 
     get quantity() {
